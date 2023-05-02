@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+
 import com.book2.Entity.Book2;
 import com.book2.service.Book2Servies;
 
@@ -25,6 +26,9 @@ public class Book2Controller {
 	public List<Book2> getAllObj() {
 		return bs.getAllObj();
 	}
-	
+	@GetMapping("/name")
+    public String name() {
+    	return "viki";
+    }
 
 }
